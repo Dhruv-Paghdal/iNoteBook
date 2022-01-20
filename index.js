@@ -38,9 +38,9 @@ let addFav=()=>{
     else{
         favourite[count-1]=1
         btns.push(`<button class="btn btn-primary mx-2" onclick="customPage(this.value)" value="${count}">${count}</button>`);
+        favouriteSection.innerHTML=favouriteSection.innerHTML+btns[(btns.length)-1]
         alert("Added To Favourite");
     }
-    favouriteSection.innerHTML=favouriteSection.innerHTML+btns[(btns.length)-1]
 }
 
 // Function for checking the current value of count
